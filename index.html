@@ -110,10 +110,14 @@ body.homeMode .top{display:none}
 .setRow.current{background:#e8f5fd}
 @media(max-width:390px){.exerciseHero{grid-template-columns:108px 1fr}.exerciseMedia{height:108px}}
 
-/* v24 home: no exercise art on starting/up-next cards */
+/* v26 home spacing */
 .nextHero{min-height:0}
-.nextCopy{padding:22px 20px 20px}
 .nextArt{display:none!important}
+.nextCopy{padding:18px 18px 18px}
+.nextCopy h2{margin-top:5px}
+.nextCopy .variant{margin-top:2px}
+.nextCopy .meta{margin-top:9px}
+.nextCopy .btn{margin-top:14px}
 </style>
 <meta name="theme-color" content="#0b1f3a">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -125,7 +129,7 @@ body.homeMode .top{display:none}
 </head><body><main>
 <div class="top"><div><div class="eyebrow">FITNESS PLAN</div><h2 id="pageTitle">12-WEEK TRACKER</h2></div><div style="display:flex;gap:6px"><button id="refreshBtn" class="btn secondary" style="width:auto;min-height:40px">↻</button><button id="exportBtn" class="btn secondary" style="width:auto;min-height:40px">BACKUP</button></div></div>
 <section id="home"><div class="homeShell">
-<div class="homeBrand"><div><div class="homeBrandMark">FITNESS</div><div style="font-size:9px;color:#8193a2;font-weight:800;margin-top:3px">APP v25</div><h1>12-WEEK PERFORMANCE PLAN</h1><div class="muted" id="homePhase">WEEK 1 · CALIBRATION</div></div><button class="homeMenu" id="homeMenu" aria-label="Settings">•••</button></div>
+<div class="homeBrand"><div><div class="homeBrandMark">FITNESS</div><span style="font-size:8px;color:#91a0ac;font-weight:800;margin-left:6px;vertical-align:middle">v26</span><h1>12-WEEK PERFORMANCE PLAN</h1><div class="muted" id="homePhase">WEEK 1 · CALIBRATION</div></div><button class="homeMenu" id="homeMenu" aria-label="Settings">•••</button></div>
 <div id="nextHero" class="nextHero"><div class="nextCopy"><div class="kicker" id="nextKicker">UP NEXT · WORKOUT A</div><h2 id="nextName">CHEST + BACK</h2><div class="variant" id="nextVariant">HEAVY</div><div class="nextStats" id="nextMeta"></div><button class="btn" id="startBtn">START WORKOUT →</button></div></div>
 <div class="homeProgress"><div class="homeProgressTop"><div><div class="eyebrow">12-WEEK PROGRESS</div><b id="phaseName">WEEK 1 · CALIBRATE</b></div><span><b id="count">0</b> / 48 WORKOUTS</span></div><div class="weekRail" id="weekRail"></div><div id="phaseText" class="muted" style="margin-top:8px;font-size:11px"></div><span id="week" style="display:none">1</span><span id="nextLetter" style="display:none">A</span></div>
 <div class="homeMini"><div class="miniCard" id="day0Card" onclick="editDay0()"><div class="eyebrow" id="day0Eyebrow">STARTING POINT</div><div class="value" id="day0Text">Complete your baseline</div><div class="muted" style="font-size:10px;margin-top:5px">TAP TO VIEW / EDIT</div><button id="day0Btn" style="display:none"></button></div><div class="miniCard"><div class="eyebrow">THIS ROTATION</div><div class="value" id="rotationLabel">A IS NEXT</div><div class="rotationDots" id="rotation"></div></div></div>
