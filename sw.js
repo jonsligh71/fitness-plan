@@ -1,4 +1,4 @@
-const CACHE = "fitness-plan-v25";
+const CACHE = "fitness-plan-v26";
 const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
